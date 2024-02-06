@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Portfolio | Jamie Kong</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<section id="header">
+		<header>
+			<span class="image avatar"><img src="images/passport.webp" alt="" /></span>
+			<h1 id="logo"><a href="#">Jamie Kong</a></h1>
+			<p>GRAPHICS & ENGINE PROGRAMMER</p>
+		</header>
+		<nav id="nav">
+			<ul>
+				<li><a href="./">Home</a></li>
+				<li><a href="./#a_about">About</a></li>
+				<li><a href="./#a_skills">Skills</a></li>
+				<li><a href="./#a_projects">Recent projects</a></li>
+				<li><a href="portfolio.html" class="active">Contact / Bio</a></li>
+			</ul>
+		</nav>
+		<footer>
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/jamie-kong-977441159/" target="_blank"
+						class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/Supercomet/" target="_blank" class="icon brands fa-github"><span
+							class="label">Github</span></a></li>
+			</ul>
+		</footer>
+	</section>
+
+	<!-- Main -->
+	<div id="wrapper">
+		<div id="main">
+			<section id="portfolio">
+				<div class="container">
+					<h2>Minute</h2>
+					<div class="gallery fit">
+						<div class="preview">
+							<img id="preview-image" src="images/minuteSplash.webp" alt="Preview">
+						</div>
+						<div class="thumbnails">
+							<img src="images/minuteSplash.webp" alt="Project 1" onclick="showPreview('images/lecture1.webp',this)"  style="border: 4px solid grey;">
+							<img src="images/lecture2.webp" alt="Project 2" onclick="showPreview('images/lecture2.webp',this)">
+							<img src="images/lecture3.webp" alt="Project 3" onclick="showPreview('images/lecture3.webp',this)">
+							<!-- Add more images with appropriate paths and alt text -->
+						</div>
+					</div>
+					<div class="gallery-item">
+						<!-- Embedded YouTube Video -->
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/LtTZwJFISqI" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="gallery-item">
+						<!-- Embedded YouTube Video -->
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/2zvssHPaKL0" frameborder="0" allowfullscreen></iframe>
+					</div>
+
+					<script src="assets/js/scripts.js"></script>
+					<p>
+					Minute is a 3D action platformer developed by a team of eleven Digipen students. The journey is played as a Wind-up toy living in a Tinkerer's work shed, set in the Victorian Age. As a small Wind-Up Toy, the player has to rely on the wind-up key on their back to progress up the workshop. Using the key to beat up enemies, overcome obstacles and unlock paths following an immersive diegetic narrative.</p><br>
+
+					<a href="https://store.steampowered.com/app/2556180/Minute/" target="_blank" class="button primary">
+						<i class="fab fa-steam"></i> Play now on steam!
+					</a>
+					<br><br>
+					<a href="https://games.digipen.edu/games/minute" target="_blank" class="button primary">
+						<i class="fas fa-gamepad"></i> Download from DigiPen
+					</a>
+					
+
+					<body><p>Technical Contributions:
+						<li>C++</li>
+						<li>Vulkan API Graphics
+							<ul>								
+									<li>Physically-based rendering (PBR)</li>
+									<li>Skinned mesh rendering</li>
+									<li>Lights and shadows</li>								
+							</ul>
+						</li>
+						<li>Particle simulation</li>
+						<li>Font system</li>
+						Production Contribution:
+						<ul>								
+							<li>Development planning</li>
+							<li>Narrative storyboarding</li>								
+						</ul><br>
+						Minute was developed using our in-house custom engine - <a href="">Ouroboros</a>.</p>
+					</body>
+
+					
+				</div>
+
+				
+			</section>
+			<div class="container">
+				<h3>Contact Me</h3>
+				<p>Get In touch</p>
+				<a href="mailto:thesupercomet@gmail.com" class="active">thesupercomet@gmail.com</a>
+				<br><br> <!-- Line break added here -->
+				<a href="documents/JamieKong_ResumeOnline.pdf" target="_blank" class="button primary">
+					<i class="fas fa-file-pdf"></i> Download portfolio
+				</a>	
+				<p></p>	<!-- empty para	 -->
+				<!-- message box
+
+					<form method="post" action="#">
+						<div class="row gtr-uniform">
+							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+							<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
+							<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+							<div class="col-12">
+								<ul class="actions">
+									<li><input type="submit" class="primary" value="Send Message" /></li>
+									<li><input type="reset" value="Reset Form" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				-->
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<section id="footer">		
+		<div class="container">
+			<ul class="copyright">
+				<li>&copy; Jamie Kong 2024. All rights reserved.</li>
+				<li>Template: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>

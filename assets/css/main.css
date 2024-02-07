@@ -2277,19 +2277,27 @@ input, select, textarea {
     flex-wrap: wrap;
 }
 
+.gallery-item{
+	flex: 0 0 auto;
+    margin: 10px; /* Adjust the margin as needed */
+}
+
+.gallery-item iframe {
+    width: 100%; /* Ensure images fill their container */
+}
 
 .preview {
-	/* margin: 25px auto; */
+	margin: 25px auto; /* Adjust the margin as needed */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-	/* margin: 2.5em 2.5em 2.5em 2.5em; */
-	width: fit-content;
+    max-width: 100%; /* Ensure the item doesn't exceed the width of its container */
 }
 
 .preview img {	
-    max-width: fit-content;
+    max-width: 100%;
+	/* flex: 0 0 auto; */
+	margin: 10px; /* Adjust the margin as needed */
     border: 1px solid #ddd;
 }
 
@@ -2298,6 +2306,7 @@ input, select, textarea {
     margin-right: 10px;
     cursor: pointer;
     transition: transform 0.3s;
+	max-width:  100%;
 }
 
 .thumbnails img:hover {

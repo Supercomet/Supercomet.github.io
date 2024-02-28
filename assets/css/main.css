@@ -2228,7 +2228,8 @@ input, select, textarea {
 				transform: translate(-50%, -50%);
 				text-align: center;
 				/* color: white; */
-				z-index: 2; /* Ensure the overlay is above the video */
+				z-index: 2; /* Ensure the overlay is above the video */	
+				
 			}
 			
 			.videoBanner .text-overlay tov {
@@ -2255,6 +2256,7 @@ input, select, textarea {
 				transition: background-color 0.3s, color 0.3s;
 				line-height: 1.5; /* Adjust the line height for vertical centering */
 				cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+				font-weight: lighter;
 			}
 			
 			.videoBanner .text-overlay a.button:hover {

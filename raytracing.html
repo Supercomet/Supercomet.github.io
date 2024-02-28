@@ -41,74 +41,52 @@
 		<div id="main">
 			<section id="portfolio">
 				<div class="container">
-					<h2>Minute</h2>
-					<h4>Third-person narrative hack and slash</h4>
+					<h2>Real-Time Raytracing</h2>
+					<h4>Simple hardware ray-tracer</h4>
 
 					<div class="gallery">
 						<div class="preview">
-							<img id="preview-image" src="images/minute/minuteSplash.webp" alt="Preview">
+							<img id="preview-image" src="images/rt/rt1.webp" alt="Preview">
 						</div>
 						<div class="thumbnails">
-							<img src="images/minute/minuteSplash.webp" alt="Minute" onclick="showPreview('images/minute/minuteSplash.webp',this)"  style="border: 4px solid grey;">
-							<img src="images/minute/minute1.webp" alt="Minute 1" onclick="showPreview('images/minute/minute1.webp',this)">
-							<img src="images/ouroboros/Editor1.webp" alt="Editor 1" onclick="showPreview('images/ouroboros/Editor1.webp',this)">
-							<img src="images/ouroboros/Editor2.webp" alt="Editor 2" onclick="showPreview('images/ouroboros/Editor2.webp',this)">
-							<img src="images/ouroboros/Editor3.webp" alt="Editor 3" onclick="showPreview('images/ouroboros/Editor3.webp',this)">
+							<img src="images/rt/rt1.webp" alt="RT 1" onclick="showPreview('images/rt/rt1.webp',this)"  style="border: 4px solid grey;">
+							<img src="images/rt/rt2.webp" alt="RT 2" onclick="showPreview('images/rt/rt2.webp',this)">
+							<img src="images/rt/rt3.webp" alt="RT 3" onclick="showPreview('images/rt/rt3.webp',this)">
 							<!-- Add more images with appropriate paths and alt text -->
 						</div>
 					</div>
 					<div class="gallery-item">
 						<!-- Embedded YouTube Video -->
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/EUCAL9m3vfc" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div class="gallery-item">
-						<!-- Embedded YouTube Video -->
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/LtTZwJFISqI" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div class="gallery-item">
-						<!-- Embedded YouTube Video -->
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/2zvssHPaKL0" frameborder="0" allowfullscreen></iframe>
-					</div>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/LLMdW84ZkOk" frameborder="0" allowfullscreen></iframe>
+					</div>				
 
 					<script src="assets/js/scripts.js"></script>
 					<p>
-					Minute is a 3D action platformer developed by a team of eleven Digipen students. The journey is played as a Wind-up toy living in a Tinkerer's work shed, set in the Victorian Age. As a small Wind-Up Toy, the player has to rely on the wind-up key on their back to progress up the workshop. Using the key to beat up enemies, overcome obstacles and unlock paths following an immersive diegetic narrative.</p><br>
+						During my Redmond exchange, I took a deep dive into the world of ray tracing by completing a module and developing a simple ray tracer using the Vulkan API. This project gave me a thorough understanding of ray tracing fundamentals and allowed me to build intuition for the Monte Carlo method of lighting calculation. I also gained practical experience working with shader binding tables, TLAS, and BLAS, as well as real-time raytracing concepts that are crucial to the advancement of computer graphics.
+ 
 
-					<h4>Get it on steam!</h4>
-					<iframe src="https://store.steampowered.com/widget/2556180/" frameborder="0" width="646" height="190"></iframe>
-					<!-- <a href="https://store.steampowered.com/app/2556180/Minute/" target="_blank" class="button primary">						
-						<i class="fab fa-steam"></i> Play now on steam!
-					</a> -->
-					<br>or<br><br>
-					<a href="https://games.digipen.edu/games/minute" target="_blank" class="button primary">
-						<i class="fas fa-gamepad"></i> Download from DigiPen
-					</a>
+						<br><br>
+Prior to joining Digipen, I was thrilled to hear about the announcement of hardware ray tracing with the release of Nvidia's RTX20 series graphics cards. I promptly purchased a compatible laptop and was excited to have the opportunity to run hardware ray tracing on it. This project was a step towards fulfilling my passion for computer graphics and my commitment to continuous learning and improving my skills in the field.
+					</p>
+
+				
 					</div>
 				</section>
 				<section id="technical">
 					<div class="container">
-					<body><p>Technical Contributions:
+					<body><p>Technical :
 						<li>C++</li>
-						<li>Vulkan API Graphics
-							<ul>								
-									<li>Physically-based rendering (PBR)</li>
-									<li>Skinned mesh rendering</li>
-									<li>Lights and shadows</li>								
-							</ul>
-						</li>
-						<li>Particle simulation</li>
-						<li>Font system</li>
-						Production Contribution:
-						<ul>								
-							<li>Development planning</li>
-							<li>Narrative storyboarding</li>								
-						</ul><br>
-						Minute was developed using our in-house custom engine - <a href="">Ouroboros</a>.</p>
+						<li>Nvidia Ray-tracing</li>								
+						<li>Explicit lightpaths</li>								
+						<li>à trous denoise algorithm</li>
+						<br>
+						Check out the code <a href="https://github.com/Supercomet/CS399">here</a>.</p>
 					</body>					
 				</div>				
+				
 			</section>
 		
-
+		
 		
 			
 			<section id="contact">

@@ -2754,6 +2754,10 @@ input, select, textarea {
 		.button.primary {
 			background-color: #4acaa8;
 			color: #ffffff !important;
+			text-align: center; /* Horizontally center the text */
+			justify-content: center; /* Horizontally center the content */
+			align-items: center; /* Vertically center the content */ 
+			height: 100%; /* Ensures the button takes up the full height */
 		}
 
 			input[type="submit"].primary:hover,
@@ -2852,6 +2856,9 @@ input, select, textarea {
 			#header h1 a, #header h2 a, #header h3 a, #header h4 a, #header h5 a, #header h6 a {
 				color: #ffffff;
 			}
+			#header h1 a:hover{
+				color: #777 !important;
+			}
 
 		#header header p {
 			color: #b7eadc;
@@ -2862,7 +2869,7 @@ input, select, textarea {
 		}
 
 			#header a:hover {
-				color: #ffffff !important;
+				color: #ffffff;
 			}
 
 		#header > header {
@@ -2906,7 +2913,12 @@ input, select, textarea {
 			}
 
 				#header > footer .icons li a {
-					color: #b7eadc;
+					font-size: 2em;
+					color: #d2f2e9;
+					height: 100%;
+				}
+				#header > footer .icons li a:hover {
+					color: #777 !important;
 				}
 
 		#header > nav {
@@ -2938,6 +2950,19 @@ input, select, textarea {
 						display: block;
 						padding: 0.85em 0;
 						text-decoration: none;
+						
+					}
+					#header > nav ul li a:hover {
+						-moz-transition: none;
+						-webkit-transition: none;
+						-ms-transition: none;
+						transition: none;
+						border: 0;
+						color: #777 !important;
+						display: block;
+						padding: 0.85em 0;
+						text-decoration: none;
+						
 					}
 
 						#header > nav ul li a.active {
@@ -2969,7 +2994,7 @@ input, select, textarea {
 	}
 
 		#main > section > .container {
-			padding: 6em 0 4em 0;
+			padding: 2em 0 2em 0;
 		}
 
 		#main > section:first-child {

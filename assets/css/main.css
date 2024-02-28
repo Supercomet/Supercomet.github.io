@@ -3008,6 +3008,15 @@ input, select, textarea {
 			border-top: 0;
 		}
 
+	.steam-widget {
+		max-width: 100%; /* Ensure the widget doesn't exceed the container width */
+		overflow: hidden; /* Hide any content that overflows the container */
+	}
+	
+	.steam-widget iframe {
+		width: 100%; /* Make the iframe occupy the full width of its container */
+		height: 190px; /* Set a fixed height or adjust as needed */
+	}
 /* Footer */
 
 	#footer {

@@ -2235,11 +2235,17 @@ input, select, textarea {
 			.videoBanner .text-overlay tov {
 				font-size: 4.75em;
 				color: white;
+				line-height: 1;				
 			}
 			
 			.videoBanner .text-overlay tovbody {
 				font-size: 2.75em;
 				color: white;
+				
+			}
+			
+			.videoBanner a{
+				border-bottom: none; /*remove underline from main text*/
 			}
 			
 			.videoBanner .text-overlay a.button {
@@ -2257,11 +2263,13 @@ input, select, textarea {
 				line-height: 1.5; /* Adjust the line height for vertical centering */
 				cursor: pointer; /* Add cursor pointer to indicate it's clickable */
 				font-weight: lighter;
+				
 			}
 			
 			.videoBanner .text-overlay a.button:hover {
 				background-color: rgba(255, 255, 255, .8);
-				color: black;
+				color: #777 !important; /*Modify color to make more readable*/
+				font-weight: bolder;				
 			}
 			
 			.videoBanner video {
@@ -2767,6 +2775,7 @@ input, select, textarea {
 			justify-content: center; /* Horizontally center the content */
 			align-items: center; /* Vertically center the content */ 
 			height: 100%; /* Ensures the button takes up the full height */
+			padding: 0 1.0em; /*Add LR padding for button*/
 		}
 
 			input[type="submit"].primary:hover,

@@ -2807,7 +2807,8 @@ input, select, textarea {
 		}
 		
 		.button.primary.home-icon {
-			position: relative;
+			position: fixed;
+			height: auto;
 			top: 20px;
 			left: 20px;
 			z-index: 1000;

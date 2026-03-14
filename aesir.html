@@ -1,152 +1,65 @@
-<!DOCTYPE HTML>
-<html>
+---
+layout: project
+title: "Aesir | Jamie Kong"
+active_nav: projects
+---
 
-<head>
-	<title>Portfolio | Jamie Kong</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="icon" href="images/gpu.ico" type="image/x-icon" />
-</head>
-
-<body class="is-preload">
-
-	<!-- Header -->
-	<section id="header">
-		<header>
-			<span class="image avatar"><img src="images/passport.webp" alt="" /></span>
-			<h1 id="logo"><a href="portfolio.html">Jamie Kong</a></h1>
-			<p>GRAPHICS & ENGINE PROGRAMMER</p>
+<section id="portfolio">
+	<div class="container">
+		<header class="major">
+			<h2>Aesir</h2>
+			<h3>Strategic Tower Defense game</h3>
 		</header>
-		<nav id="nav">
-			<ul>
-				<li><a href="./">Home</a></li>
-				<li><a href="./#a_about">About</a></li>
-				<li><a href="./#a_skills">Skills</a></li>
-				<li><a href="./#a_projects" class="active">Recent projects</a></li>
-				<li><a href="portfolio.html">Contact / Bio</a></li>
-			</ul>
-		</nav>
-		<footer>
-			<ul class="icons">
-				<li><a href="https://www.linkedin.com/in/jamietkong/" target="_blank"
-						class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-				<li><a href="https://github.com/Supercomet/" target="_blank" class="icon brands fa-github"><span
-							class="label">Github</span></a></li>
-			</ul>
-		</footer>
-	</section>
 
-	<!-- Main -->
-	<body>
-		<a href="./" class="button primary home-icon"><i class="fas fa-home"></i></a>
-	</body>
-	<div id="wrapper">
-		<div id="main">
-			<section id="portfolio">
-				<div class="container">
-					<header class="major">
-						<h2>Aesir</h2>
-						<h3>Strategic Tower Defense game</h3>
-					</header>
-
-					<div class="gallery">
-						<div class="preview">
-							<img id="preview-image" src="images/aesir/AesirTitle.webp" alt="Preview">
-						</div>
-						<div class="thumbnails">
-							<img src="images/aesir/AesirTitle.webp" alt="Aesir" onclick="showPreview('images/aesir/AesirTitle.webp',this)"  style="border: 4px solid grey;">
-							<img src="images/aesir/aesir1.webp" alt="Aesir 1" onclick="showPreview('images/aesir/aesir1.webp',this)">
-							<img src="images/aesir/aesir2.webp" alt="Aesir 2" onclick="showPreview('images/aesir/aesir2.webp',this)">
-							<img src="images/aesir/UI_levelselect_FASGARD.webp" alt="Fasgard" onclick="showPreview('images/aesir/UI_levelselect_FASGARD.webp',this)">
-							<img src="images/aesir/UI_levelselect_MIDGARD.webp" alt="Midgard" onclick="showPreview('images/aesir/UI_levelselect_MIDGARD.webp',this)">
-							<img src="images/aesir/UI_levelselect_MIDGARD_v2.webp" alt="Midgard 2" onclick="showPreview('images/aesir/UI_levelselect_MIDGARD_v2.webp',this)">
-							<!-- Add more images with appropriate paths and alt text -->
-						</div>
-					</div>
-					<div class="gallery-item">
-						<!-- Embedded YouTube Video -->
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/OdvsTIyBZnE" frameborder="0" allowfullscreen></iframe>
-					</div>				
-
-					<script src="assets/js/scripts.js"></script>
-					<p>
-						Æsir is a narrative-focused strategy tower defense game with a customizable tower system and randomly generated shop mechanics.
-						<br><br>
-						Æsir takes place in medieval Scandinavia, long after the coming of the First Ragnarök. The player embarks on a journey through the realms to discover his true identity, defending what he cherishes the most by using the customizable towers within his reach to equip the enchanted Seeds of Yggdrasil with defense capabilities. The World Tree is a central plot point in our game's narrative as you fight to defend it from the world serpent, Jörmungandr.</p><br>
-
-					<a href="https://games.digipen.edu/games/aesir" target="_blank" class="button primary">
-						<i class="fas fa-gamepad"></i> Download from DigiPen
-					</a>
-					</div>
-				</section>
-				<section id="technical">
-					<div class="container">
-					<body><p>Technical Contributions:
-						<li>C++</li>
-						<li>Modern OpenGL 4.6</li>
-						<li>Resource Management</li>								
-						<li>Particle Simulation</li>								
-						<li>Font system</li>		
-						<br>				
-						Aesir was developed using our team's custom engine - <a href="">Ouroboros</a>.</p>
-					</body>					
-				</div>				
-			</section>
-		
-
-		
-			
-			<section id="contact">
-			<div class="container">				
-				<a href="portfolio.html"><h3>Contact Me</h3></a>
-				<p>Get in touch</p>
-				<a href="mailto:thesupercomet@gmail.com" class="active">thesupercomet@gmail.com</a>
-				<br><br> <!-- Line break added here -->
-				<a href="documents/JamieKong_ResumeOnline.pdf" target="_blank" class="button primary">
-					<i class="fas fa-file-pdf"></i> Download portfolio
-				</a>	
-				<p></p>	<!-- empty para	 -->
-			</section>
-				<!-- message box
-
-					<form method="post" action="#">
-						<div class="row gtr-uniform">
-							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-							<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-							<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-							<div class="col-12">
-								<ul class="actions">
-									<li><input type="submit" class="primary" value="Send Message" /></li>
-									<li><input type="reset" value="Reset Form" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
-				-->
+		<div class="gallery">
+			<div class="preview">
+				<img id="preview-image" src="images/aesir/AesirTitle.webp" alt="Preview">
+			</div>
+			<div class="thumbnails">
+				<img src="images/aesir/AesirTitle.webp" alt="Aesir" onclick="showPreview('images/aesir/AesirTitle.webp',this)" loading="lazy" style="border: 4px solid grey;">
+				<img src="images/aesir/aesir1.webp" alt="Aesir 1" onclick="showPreview('images/aesir/aesir1.webp',this)" loading="lazy">
+				<img src="images/aesir/aesir2.webp" alt="Aesir 2" onclick="showPreview('images/aesir/aesir2.webp',this)" loading="lazy">
+				<img src="images/aesir/UI_levelselect_FASGARD.webp" alt="Fasgard" onclick="showPreview('images/aesir/UI_levelselect_FASGARD.webp',this)" loading="lazy">
+				<img src="images/aesir/UI_levelselect_MIDGARD.webp" alt="Midgard" onclick="showPreview('images/aesir/UI_levelselect_MIDGARD.webp',this)" loading="lazy">
+				<img src="images/aesir/UI_levelselect_MIDGARD_v2.webp" alt="Midgard 2" onclick="showPreview('images/aesir/UI_levelselect_MIDGARD_v2.webp',this)" loading="lazy">
 			</div>
 		</div>
-	</div>
-
-	<!-- Footer -->
-	<section id="footer">		
-		<div class="container">
-			<ul class="copyright">
-				<li>&copy; Jamie Kong 2024. All rights reserved.</li>
-				<li>Template: <a href="http://html5up.net">HTML5 UP</a></li>
-			</ul>
+		<div class="gallery-item">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/OdvsTIyBZnE" frameborder="0" allowfullscreen></iframe>
 		</div>
-	</section>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-</body>
+		<p>
+			Æsir is a narrative-focused strategy tower defense game with a customizable tower system and randomly generated shop mechanics.
+			<br><br>
+			Æsir takes place in medieval Scandinavia, long after the coming of the First Ragnarök. The player embarks on a journey through the realms to discover his true identity, defending what he cherishes the most by using the customizable towers within his reach to equip the enchanted Seeds of Yggdrasil with defense capabilities. The World Tree is a central plot point in our game's narrative as you fight to defend it from the world serpent, Jörmungandr.</p><br>
 
-</html>
+		<a href="https://games.digipen.edu/games/aesir" target="_blank" class="button primary">
+			<i class="fas fa-gamepad"></i> Download from DigiPen
+		</a>
+	</div>
+</section>
+<section id="technical">
+	<div class="container">
+		<p>Technical Contributions:
+			<li>C++</li>
+			<li>Modern OpenGL 4.6</li>
+			<li>Resource Management</li>
+			<li>Particle Simulation</li>
+			<li>Font system</li>
+			<br>
+			Aesir was developed using our team's custom engine - <a href="ouroboros2D.html">Ouroboros</a>.</p>
+	</div>
+</section>
+
+<section id="contact">
+	<div class="container">
+		<a href="portfolio.html"><h3>Contact Me</h3></a>
+		<p>Get in touch</p>
+		<a href="mailto:thesupercomet@gmail.com" class="active">thesupercomet@gmail.com</a>
+		<br><br>
+		<a href="documents/JamieKong_ResumeOnline.pdf" target="_blank" class="button primary">
+			<i class="fas fa-file-pdf"></i> Download portfolio
+		</a>
+		<p></p>
+	</div>
+</section>

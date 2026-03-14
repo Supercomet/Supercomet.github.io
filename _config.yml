@@ -1,0 +1,14 @@
+title: "Jamie Kong | Graphics & Engine Programmer"
+description: "Jamie Kong's developer projects and portfolio"
+baseurl: ""
+url: "https://jamiekong.dev"
+
+sass:
+  sass_dir: assets/sass
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - "portfolio copy.html"
+  - assets/css/main.css

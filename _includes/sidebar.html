@@ -1,0 +1,25 @@
+<!-- Header -->
+<section id="header">
+	<header>
+		<span class="image avatar"><img src="{{ '/images/passport.webp' | relative_url }}" alt="" /></span>
+		<h1 id="logo"><a href="{{ '/portfolio.html' | relative_url }}">Jamie Kong</a></h1>
+		<p>GRAPHICS &amp; ENGINE PROGRAMMER</p>
+	</header>
+	<nav id="nav">
+		<ul>
+			<li><a href="{{ '/' | relative_url }}"{% if page.active_nav == 'home' %} class="active"{% endif %}>Home</a></li>
+			<li><a href="{% if page.is_homepage %}#a_about{% else %}{{ '/' | relative_url }}#a_about{% endif %}">About</a></li>
+			<li><a href="{% if page.is_homepage %}#a_skills{% else %}{{ '/' | relative_url }}#a_skills{% endif %}">Skills</a></li>
+			<li><a href="{% if page.is_homepage %}#a_projects{% else %}{{ '/' | relative_url }}#a_projects{% endif %}"{% if page.active_nav == 'projects' %} class="active"{% endif %}>Recent projects</a></li>
+			<li><a href="{{ '/portfolio.html' | relative_url }}"{% if page.active_nav == 'contact' %} class="active"{% endif %}>Contact / Bio</a></li>
+		</ul>
+	</nav>
+	<footer>
+		<ul class="icons">
+			<li><a href="https://www.linkedin.com/in/jamietkong/" target="_blank"
+					class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+			<li><a href="https://github.com/Supercomet/" target="_blank" class="icon brands fa-github"><span
+						class="label">Github</span></a></li>
+		</ul>
+	</footer>
+</section>

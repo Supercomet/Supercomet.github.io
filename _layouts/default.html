@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+
+{% include head.html %}
+
+<body class="is-preload">
+
+{% include sidebar.html %}
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+	<!-- Main -->
+	<div id="main">
+		{{ content }}
+	</div>
+
+	{% include footer.html %}
+
+</div>
+
+<!-- Scripts -->
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+</body>
+
+</html>

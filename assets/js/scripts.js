@@ -1,16 +1,24 @@
-function showPreview(imageSrc, clickedThumbnail) {
-    var previewImage = document.getElementById('preview-image');
-    previewImage.src = imageSrc;
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.gallery').forEach(function(gallery) {
+    var preview = gallery.querySelector('#preview-image');
+    var thumbnails = gallery.querySelectorAll('.thumbnails img');
 
-    // Remove border from all thumbnails
-    var thumbnails = document.querySelectorAll('.thumbnails img');
-    thumbnails.forEach(function(thumbnail) {
-        thumbnail.style.border = 'none';
+    if (thumbnails[0]) thumbnails[0].classList.add('active');
+
+    gallery.querySelector('.thumbnails').addEventListener('click', function(e) {
+      var thumb = e.target.closest('img');
+      if (!thumb) return;
+
+      if (thumb.classList.contains('active')) return;
+
+      thumbnails.forEach(function(t) { t.classList.remove('active'); });
+      thumb.classList.add('active');
+
+      preview.src = thumb.src;
+      preview.alt = thumb.alt;
     });
-
-    // Add border to the clicked thumbnail
-    clickedThumbnail.style.border = '4px solid grey';
-}
+  });
+});
 
 
 var acc = document.getElementsByClassName("accordion");

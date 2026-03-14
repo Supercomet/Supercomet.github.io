@@ -80,12 +80,7 @@
 				navLinks.forEach(function(link) {
 					var href = link.getAttribute('href');
 					if (href && (href === '#' + id || href.endsWith('#' + id))) {
-						navLinks.forEach(function(l) {
-							// only remove active from same-page anchors
-							if (l.getAttribute('href') && l.getAttribute('href').charAt(0) === '#') {
-								l.classList.remove('active');
-							}
-						});
+						navLinks.forEach(function(l) { l.classList.remove('active'); });
 						link.classList.add('active');
 					}
 				});

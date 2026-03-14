@@ -2038,10 +2038,44 @@
 /* Features card hover */
 
 	.features article {
-		@include vendor('transition', ('border-color #{_duration(transition)} ease', 'transform #{_duration(transition)} ease', 'box-shadow #{_duration(transition)} ease'));
+		padding-top: 0;
+		@include vendor('transition', ('background-color #{_duration(transition)} ease', 'border-color #{_duration(transition)} ease', 'transform #{_duration(transition)} ease', 'box-shadow #{_duration(transition)} ease'));
 
 		&:hover {
+			background-color: _palette(border2-bg);
 			transform: translateY(-2px);
-			box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+			box-shadow: 0 4px 24px rgba(224, 120, 64, 0.15);
+		}
+
+		.image {
+			height: 10em;
+			overflow: hidden;
+			vertical-align: top;
+
+			img {
+				width: 100%;
+				height: 100%;
+				@include vendor('object-fit', 'cover');
+				@include vendor('object-position', 'center');
+			}
+		}
+
+		.inner {
+			padding-top: _size(element-margin);
+		}
+	}
+
+	ul.feature-icons {
+		li {
+			@include vendor('transition', ('background-color #{_duration(transition)} ease', 'transform #{_duration(transition)} ease', 'box-shadow #{_duration(transition)} ease'));
+			border-radius: _size(border-radius);
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+
+			&:hover {
+				background-color: _palette(border2-bg);
+				transform: translateY(-2px);
+				box-shadow: 0 4px 24px rgba(224, 120, 64, 0.15);
+			}
 		}
 	}
